@@ -1,0 +1,327 @@
+* {
+  box-sizing: border-box;
+}
+
+/* das ist ein Kommentar */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+  line-height: 1.4;
+}
+
+p {
+  font-family: 'PT Serif', serif;
+}
+
+#navigation {
+  background-color: rgb(40, 44, 52);
+  height: 60px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+#navigation a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: .5s all linear;
+}
+
+#navigation a:hover {
+  color: rgb(69, 139, 116);
+}
+
+#navigation li {
+  list-style: none;
+  margin-left: 2em;
+}
+
+#logo {
+  margin-top: 10px;
+}
+
+#menu {
+  background: rgb(40, 44, 52)
+}
+
+#burger {
+  color: white;
+  /* oder #fff */
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  float: right;
+  margin-top: 10px;
+  padding: 0;
+  /* kein Abstand zwischen Strichen und Rand*/
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  /* vh VIEWPORT HEIGHT/bILDSCHIRMGRÖßE*/
+  background-image: url(img/intro.jpg);
+  /* hinweis auf Bild/Pfad*/
+  background-size: cover;
+  /* Bild immer schön zentriert*/
+  background-position: center;
+  /* Bild immer schön zentriert*/
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.btn {
+  background-color: rgb(102, 205, 170);
+  color: white;
+  text-decoration: none;
+  border-style: solid;
+  /* boder: 1px solid white*/
+  border-width: 1px;
+  border-color: white;
+  padding: 1em;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 2em;
+  transition: .5s background linear;
+}
+
+.btn:hover {
+  background-color: rgb(69, 139, 166);
+}
+
+#Rezepte h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+#Rezepte img {
+  width: 100%
+}
+
+.col img {
+  border-radius: 4px 4px 0 0;
+  /* Ecken runden, im Uhrzeigersinn, oben links 4px, unten rechts 0...*/
+  display: block;
+  /*entfernt Abstand zw. Bild und Rahmenlinien*/
+}
+
+.text-rezept {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-radius: 0 0 4px 4px;
+  text-align: center;
+  padding: 1em;
+}
+
+.col h3 {
+  margin: 0;
+  /* Abstand zwischen Bild und Rahmen raus*/
+}
+
+.rezepte {
+  margin: 0;
+  display: block;
+  /* Button soll über ganze Breite gehen, soweit wie möglich*/
+}
+
+.col {
+  margin-bottom: 2em;
+}
+
+#rezepte img, #sidebar img {
+  /*Bilder passen sich an Begrenzungsrahmen an/sind dynamisch*/
+  width: 100%;
+}
+
+.formular input {
+  /* Search-Kasten auf Breite der Sidebar anpassen*/
+  height: 2em;
+  width: 100%;
+  padding-right: 4em;
+  border: 1px solid black;
+  /* Linie um Suchfeld*/
+  padding-left: .5em;
+  /*Abstand vom Text im Suchfeld zum Rand*/
+}
+
+.formular button {
+  /*Button in, bzw. auf Suchfeld*/
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: transparent;
+  border: none;
+  font-size: 1.4em;
+  /*Größe der Lupe (ist Schriftart) anpassen*/
+  line-height: 1.3em;
+  padding: none;
+}
+
+.formular {
+  /* muss eingefügt werden, wenn .formulat button*/
+  position: relative;
+  border-bottom: 1px dotted black;
+  padding-bottom: 1.3em;
+  margin-bottom: 1.3em;
+}
+
+.author img {
+  border-radius: 90%;
+}
+
+.affiliate {
+  border-top: 1px dotted black;
+  padding-top: .5em;
+  margin-top: 2em;
+}
+
+#sidebar {
+  text-align: center;
+  /* alle Emelemnte in der Sidebar werden zentriert*/
+}
+
+#sidebar h2 {
+  text-transform: uppercase;
+  /*Headline als Großbuchstaben*/
+}
+
+#sidebar img {
+  width: 50%;
+}
+
+footer {
+  clear: both;
+  /* kein float mehr*/
+  background-color: rgb(40, 44, 52);
+  width: 100%;
+  min-height: 200px;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li a {
+  color: white;
+  text-decoration: none;
+}
+
+#socialmenu li {
+  /* diese Icons sollen in jeder Größe nebeneinander stehen, deshalb ausserhalb der media query*/
+  float: left;
+  margin-left: 1em;
+  /*Abstand zw. den Icons*/
+}
+
+footer {
+  padding: 2em;
+  text-align: center;
+}
+
+#footermenu {
+  padding: 0;
+}
+
+#socialmenu {
+  display: inline-block;
+  padding: 0;
+}
+
+#menu{
+  position: absolute;
+  top: 60px;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  display: none;
+}
+
+#menu.show{ /*scrolldown menue im header - durchs java script möglich*/
+  display: block;
+
+}
+
+@media (min-width: 768px) {
+#menu{
+  position: static;
+  width:auto;
+  display: block;
+}
+
+  #burger {
+    display: none;
+  }
+  #menu {
+    float: right;
+  }
+  nav li {
+    float: left;
+    /*inline block auch möglich*/
+  }
+  .hero-text h1 {
+    font-size: 3em;
+  }
+  .hero-text p {
+    font-size: 20pt;
+  }
+  .col {
+    float: left;
+    width: 46%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  #rezepte {
+    /* Rezepte nach links schieben, um Platz für Sidebar zu machen*/
+    width: 66.66667%;
+    float: left;
+  }
+  #sidebar {
+    /*Sidebar rückt ein*/
+    width: 33.33333%;
+    float: left;
+  }
+  .wrapper {
+    position: relative;
+    min-height: 200px;
+    /*mindestens so groß wie elternteil*/
+  }
+  #footermenu li {
+    float: left;
+    margin-right: 1em;
+    /* Abstand zw. den Begriffen*/
+  }
+  #footermenu {
+    position: absolute;
+    /* Menuepunkte runtersetzen // absolut hebt "Chefrollen" auf*/
+    top: 50%;
+    margin: 0;
+    /*margin und padding sind voreingestellt und müssen rausgenommen werden*/
+    padding: 0;
+    transform: translateY(-50%);
+    /*schoebe die schrift um 50% nach oben //menupunkte sind zentiert*/
+  }
+  #socialmenu {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-50%);
+  }
+}

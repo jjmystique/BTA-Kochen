@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>BTA Kochen | Startseite</title> <!--title element macht den titel der Website-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="hmmm. Tolle Rezepte für Nerds und welche die es werden wollen. Schnell und einfach zubereitet.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/icons.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
+  </head>
+  <body>
+  <header id="navigation">
+      <div class="wrapper">
+        <a href="index.html" title="Startseite">
+        <img src="img/logo.svg" alt="logo BTA Kochen" height="40" id="logo">
+        </a>
+        <button id="burger">
+        <span class="icon-menu"></span>
+      </button>
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Rezepte</a>
+            </li>
+            <li>
+              <a href="">Über uns</a>
+            </li>
+            <li>
+              <a href="">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+<section id="hero">
+  <div class="hero-text">
+    <h1>Die besten Rezepte für Webworker</h1>
+    <p>Es gibt mehr Pizza & Ravioli</p>
+      <a href="#Rezepte" class="btn">Entdecke die Leckereien</a>
+
+
+  </div>
+</section>
+
+<div class="wrapper">
+  <main id="rezepte">
+    <h2>Die neuesten Rezepte</h2>
+    <div class="row">
+      <article class="col">
+        <img src="img/farfalle.jpg" alt="Farfalle mit Pesto">
+        <div class="text-rezept">
+
+
+        <h3>Farfalle mit Pesto</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <a href="#"class="btn rezepte" >Zum Rezept</a>
+          </div>
+      </article>
+
+      <article class="col">
+        <img src="img/reispfanne-lissabon.jpg" alt="reispfanne">
+        <div class="text-rezept">
+        <h3>Reispfanne Lissabon</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <a href="#" class="btn rezepte">Zum Rezept</a>
+        </div>
+      </article>
+
+      <article class="col">
+        <img src="img/kuerbissuppe.jpg" alt="kuerbissuppe">
+        <div class="text-rezept">
+        <h3>Kürbissuppe</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <a href="#" class="btn rezepte">Zum Rezept</a>
+        </div>
+        </article>
+
+        <article class="col">
+          <img src="img/burger.jpg" alt="Burger">
+          <div class="text-rezept">
+          <h3>Sauguter Burger</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <a href="#"class="btn rezepte">Zum Rezept</a>
+          </div>
+        </article>
+
+        <article class="col">
+          <img src="img/toast-mit-ei.jpg" alt="Toast mit Ei">
+          <div class="text-rezept">
+          <h3>Toast mit Ei</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <a href="#"class="btn rezepte">Zum Rezept</a>
+          </div>
+        </article>
+
+        <article class="col">
+          <img src="img/pancakes.jpg" alt="Pancakes">
+          <div class="text-rezept">
+          <h3>Leckere Pancakes</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <a href="#"class="btn rezepte">Zum Rezept</a>
+          </div>
+        </article>
+
+
+    </div>
+
+
+  </main>
+  <aside id="sidebar">
+    <div class="search"> <!--*Suchfeld einrichten-->
+      <h2>Finde dein Rezept</h2>
+      <form class="formular" action="https://www.google.de/search" method="get"> <!--Suche! get= holen, post=was eintragen (formular z.B.). post ist sicherer!-->
+        <input type="search" name="q" value="" placeholder="Mmmmnnnn"> <!--type: search oder email oder password möglich// q=query--> <!--value= das was im Suchfeld drin steht-->
+        <button type="submit"> <!-- such-button einfügen(der mit Lupe)-->
+          <span class="icon-search"></span>
+        </button>
+      </form>
+    </div>
+
+    <div class="author">
+      <img src="img/koch.jpg" alt="Der Frosch kocht hier">
+      <h2>Hier kocht der Chef!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="affiliate">
+      <h2>Zu faul zum kochen?</h2>
+      <img src="img/ravioli.jpg" alt="Ravioli">
+      <p>Hol dir tolle Fertiggerichte bei</p>
+      <a target="_blank" href="https://www.amazon.de/b?node=6723195031&tag=googhydr08-21&hvadid=244242444920&hvpos=1t2&hvnetw=g&hvrand=8114289385442123898&hvpone=&hvptwo=&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9043108&hvtargid=kwd-361607079597&ref=pd_sl_1bm9c3o8ej_e">
+        <img src="img/amazon-fresh.gif" alt="Amazon Fresh">
+      </a>
+
+    </div>
+
+  </aside>
+
+</div>
+
+<footer id="footer">
+  <div class="wrapper">
+    <ul id="footermenu">
+        <li>
+          <a href="#">Impressum</a>
+        </li>
+        <li>
+          <a href="#">Datenschutz</a>
+        </li>
+        <li>
+          <a href="#">Kontakt</a>
+        </li>
+        </ul>
+
+        <ul id="socialmenu">
+          <li>
+            <a target="_blanc" href="#">
+              <span class="icon-facebook"></span>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="#">
+              <span class="icon-youtube"></span>
+            </a>
+          </li>
+          <li>
+          <a target="_blank" href="#">
+            <span class="icon-instagram"></span>
+          </a>
+        </li>
+        </ul>
+
+  </div>
+
+</footer>
+
+<script src="menu.js"></script>
+
+  </body>
+
+</hmtl>
